@@ -1,0 +1,26 @@
+body {
+  color: #444;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.banner {
+  text-align: center;
+  background: url('../images/hero.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: cover;
+}
+.logo {
+  text-align: left;
+  height: 50px;
+  width: 50px;
+}
+.logo img {
+  width: 50px;
+  height: auto;
+}
