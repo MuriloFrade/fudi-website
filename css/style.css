@@ -3,10 +3,22 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  outline: none;
+}
+a:active, a:focus {
+  outline: none; /* remove dotted border when click*/
+}
+a:hover {
+  opacity: 0.7;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+/* Banner section  */
 .banner {
   text-align: center;
   background: url('../images/hero.jpg');
@@ -14,13 +26,144 @@ body {
   background-attachment: fixed;
   background-position: top center;
   background-size: cover;
+  color: #fff;
 }
 .logo {
+  display: inline-block;
   text-align: left;
-  height: 50px;
-  width: 50px;
+  margin-top: 15px;
 }
 .logo img {
-  width: 50px;
+  width: 75px;
   height: auto;
 }
+nav ul {
+  text-align: right;
+  margin-top: 45px;
+}
+nav li {
+  display: inline;
+
+}
+nav li a {
+  color: #fff;
+  font-size: 14px;
+  opacity: 0.8;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+.banner-content{
+  padding: 160px 0px;
+}
+.up-headline {
+  margin: 0;
+  font-family: times, georgia;
+  font-style: oblique;
+  opacity: 0.8;
+  font-size: 35px;
+}
+.headline {
+  top: 50%;
+  font-size: 90px;
+  margin: 0px;
+}
+.bottom-headline {
+  font-size: 12px;
+}
+.bottom-headline span {
+  text-decoration: underline;
+}
+.get-started {
+  display: inline-block;
+  color: #fff;
+  border: 2px solid #ffffff;
+  padding: 12px 60px;
+  margin: 15px 0;
+}
+
+/*icons section*/
+
+section.icons {
+  text-align: center;
+  margin: 100px 5px;
+}
+.icon{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.icon img {
+
+}
+.icon h2 {
+  margin-bottom: -10px;
+}
+.line {
+  width: 105px;
+  display: inline-block;
+  border-top: 1px solid #F57365;
+  text-align: center;
+  margin-top: 0;
+}
+
+/*intro app section*/
+
+section.intro-app{
+  background-color: #F7F7F7;
+  padding-top: 100px;
+}
+
+.smartphone {
+  display: inline-block;
+  text-align: left;
+}
+.smartphone img {
+  width: 500px;
+  margin-bottom: -3px;
+}
+.intro-text {
+  padding-top: 50px;
+}
+.link-store{
+  display: inline-block;
+  width: 160px;
+  height: 50px;
+}
+#app-store {
+  background: url(../images/appstore.png) 0px -9px;
+  background-size: cover;
+
+}
+#play-store {
+  background: url(../images/appstore.png) 0px 60px;
+  background-size: cover;
+}
+
+/*testimonials section*/
+.testimonial {
+  padding: 0 260px;
+  text-align: center;
+  background: url('../images/reviews-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  color: #fff;
+}
+.testimonial img {
+  width: 90px;
+  padding: 30px;
+  margin-top: 80px;
+  opacity: 0.5;
+  border: 4px solid #fff;
+  border-radius: 50%;
+}
+.testimonial p {
+  opacity: 0.7;
+  font-size: 25px;
+  font-weight: lighter;
+}
+.testimonial p:last-child {
+  padding-bottom: 80px;
+  font-size: 16px;
+}
+
+/* cuisine section */
