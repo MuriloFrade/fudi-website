@@ -2,7 +2,9 @@ body {
   color: #444;
   font-family: 'Lato', sans-serif;
 }
-
+p {
+  font-size: 14px;
+}
 a {
   text-decoration: none;
   outline: none;
@@ -10,15 +12,19 @@ a {
 a:active, a:focus {
   outline: none; /* remove dotted border when click*/
 }
-a:hover {
-  opacity: 0.7;
-}
+a:hover { opacity: 0.7; }
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
+.line {
+  width: 105px;
+  display: inline-block;
+  border-top: 1px solid #F57365;
+}
 
-/* Banner section  */
+/*  ----- Banner section ----- */
 .banner {
   text-align: center;
   background: url('../images/hero.jpg');
@@ -41,10 +47,7 @@ nav ul {
   text-align: right;
   margin-top: 45px;
 }
-nav li {
-  display: inline;
-
-}
+nav li { display: inline; }
 nav li a {
   color: #fff;
   font-size: 14px;
@@ -52,9 +55,7 @@ nav li a {
   text-transform: uppercase;
   margin: 0 10px;
 }
-.banner-content{
-  padding: 160px 0px;
-}
+.banner-content{ padding: 160px 0px; }
 .up-headline {
   margin: 0;
   font-family: times, georgia;
@@ -67,9 +68,7 @@ nav li a {
   font-size: 90px;
   margin: 0px;
 }
-.bottom-headline {
-  font-size: 12px;
-}
+.bottom-headline { font-size: 12px; }
 .bottom-headline span {
   text-decoration: underline;
 }
@@ -81,11 +80,11 @@ nav li a {
   margin: 15px 0;
 }
 
-/*icons section*/
+/* ---- icons section ----- */
 
 section.icons {
   text-align: center;
-  margin: 100px 5px;
+  margin: 80px 5px;
 }
 .icon{
   padding-left: 15px;
@@ -94,18 +93,9 @@ section.icons {
 .icon img {
 
 }
-.icon h2 {
-  margin-bottom: -10px;
-}
-.line {
-  width: 105px;
-  display: inline-block;
-  border-top: 1px solid #F57365;
-  text-align: center;
-  margin-top: 0;
-}
+.icon h2 { margin-bottom: -10px; }
 
-/*intro app section*/
+/* ---- intro app section ---- */
 
 section.intro-app{
   background-color: #F7F7F7;
@@ -117,12 +107,12 @@ section.intro-app{
   text-align: left;
 }
 .smartphone img {
-  width: 500px;
+  width: 90%;
   margin-bottom: -3px;
 }
-.intro-text {
-  padding-top: 50px;
-}
+.intro-text { padding-top: 50px; }
+.intro-text h2 { margin-bottom: -10px; }
+.intro-text p { padding-right: 15px; }
 .link-store{
   display: inline-block;
   width: 160px;
@@ -131,14 +121,13 @@ section.intro-app{
 #app-store {
   background: url(../images/appstore.png) 0px -9px;
   background-size: cover;
-
 }
 #play-store {
   background: url(../images/appstore.png) 0px 60px;
   background-size: cover;
 }
 
-/*testimonials section*/
+/* ------ testimonials section ------- */
 .testimonial {
   padding: 0 260px;
   text-align: center;
@@ -166,4 +155,83 @@ section.intro-app{
   font-size: 16px;
 }
 
-/* cuisine section */
+/* ------ cuisines section ------ */
+
+section.cuisines {
+  margin: 50px 0;
+  text-align: center;
+}
+.cuisines-title {
+  margin-bottom: -10px;
+}
+.cuisines-gallery {
+  margin-top: 30px;
+}
+.item-cuisine {
+  float: left;
+  width: 20%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+}
+.item-cuisine p {
+  margin-top: 25%;
+  margin-bottom: 0%;
+  font-size: 13px;
+  font-family: times, georgia;
+  font-style: oblique;
+}
+.item-cuisine h1 {
+ text-transform: uppercase;
+ font-size: 30px;
+ margin-top: 0;
+ margin-bottom: 25%;
+}
+.italian{ background: url('../images/italian.jpg'); }
+.indian{ background: url('../images/indian.jpg'); }
+.french{ background: url('../images/french.jpg'); }
+.steakhouse{ background: url('../images/steak.jpg'); }
+.seafood{ background: url('../images/seafood.jpg'); }
+.sushi{ background: url('../images/sushi.jpg'); }
+.mexican{ background: url('../images/mexican.jpg'); }
+.chinese{ background: url('../images/chinese.jpg'); }
+.pizza{ background: url('../images/pizza.jpg'); }
+.american{ background: url('../images/american.jpg'); }
+
+.item-cuisine { background-size: cover; }
+.item-cuisine:hover { opacity: 0.8; }
+
+/* ---- statistics section ------ */
+
+section.statistics {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+.item-stat {
+  float: left;
+  width: 20%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.item-stat h1 { margin-bottom: -8px;}
+.item-stat p { font-size: 10px; }
+
+/* ---- foooter ----- */
+
+footer {
+  background-color: #F7F7F7;
+  padding: 20px 0 ;
+}
+footer p {
+  /*display: inline-block;*/
+  margin-bottom: 0;
+}
+p.left { font-size: 10px }
+p.right {
+  text-align: right;
+  font-size: 12px;
+  padding-right: 20px;
+}
